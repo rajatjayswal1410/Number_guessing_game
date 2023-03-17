@@ -10,36 +10,40 @@
 
 <body>
     <script>
-        // let arr = [1, 2, 3, 5, "Rajat"]
-        // let i = 0
-        // while (i < arr.length-1) {
-        //     if(arr[i] === 2){
-        //         var tmp = arr[i]
-        //         arr[i] = arr[i+1]
-        //         arr[i+1] = tmp
-        //     }
-        //     i++
-        // }
-        // arr.length = arr.length-1
+         const arr = [1, 2, 4, 5]
 
-        // console.log(arr);
-
-        // var obj = {
-        //     name:'Rajat',
-        //     age:22,
-        //     products:["product1", "product2"],
-        //     products:'product1',
-        //     data:{
-        //         birdthdate:"4 oct",
-        //         rollNumber:22,
-        //     }
-        // }
-
-        // console.log(obj);
+        let left = 0
+        let right = arr.length - 1
+        while (left < arr.length && left < right) {
+            var tmp = arr[left]
+            arr[left] = arr[right]
+            arr[right] = tmp
+            right--
+            left++
+        }
 
 
-    
 
+        const s1 = "Rajat"
+
+        var i = 0
+        const obj = {}
+
+        while (i < s1.length) {
+            obj[s1[i]] = (obj[s1[i]] || 0) + 1
+            i++
+        }
+
+        const s2 = "tajRa"
+        i = 0
+        while (i < s2.length) {
+            delete obj[s2[i]]
+            i++
+        }
+
+
+
+        console.log(obj);
     </script>
 </body>
 
