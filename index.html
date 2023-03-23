@@ -7,86 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .test {
+        background: green;
+    }
+</style>
 
 <body>
 
-
+    <h1 id="h1">This is Heading 1</h1>
+    <button id="btn">Click</button>
+    <button id="btn1">Click</button>
     <script>
-        
-        // function spt(s,c){
-        //     let i = 0
-        //     let arr =[]
-        //     let tmp = ""
-        //     while (i < s.length) {
-        //         console.log(tmp);
-        //         if(s[i] === c){
-        //             arr.push(tmp)
-        //             tmp = ""
-        //         }else{
-        //             tmp = tmp + s[i]
-        //         }
-        //         i++
-        //     }
-        //     arr.push(tmp)
-        //     return arr
-        // }
-
-        // const t = spt();
-
-
-
-
-       
-
-
-        // function callBack(x){
-            // console.log(x);
-        // }
-
-        // data.map(callBack)
-
-        // function map(a){
-        //     a()
-        // }
-        // const m = () => {
-
-        // }
-
-
-        const data = [
-            {name:"Rajat", age:22},
-            {name:"soham", age:22},
-            {name:"bhavadeep", age:22},
-            {name:"nishant", age:22},
-            {name:"darshak", age:22},
-        ]
-
-
-        // data.map(function(x,index){
-        //     console.log(x,index);
-        // })
-
-
-
-        // function Nap(arr, fun){
-        //     console.log(arr);
-        //     console.log(fun);
-        //     let i =0
-        //     while (i < arr.length) {
-        //         fun(arr[i], i)
-        //         i++
-        //     }
-        // }
-
-
-        // Nap(data, function (w, index){
-        //     console.log(w,index);
-        // })
-
-       
-
-
-
+        const h1 = document.getElementById("h1")
+        const button = document.getElementById("btn")
+        const button1 = document.getElementById("btn1")
+        function click(color) {
+            h1.style.color = color
+        }
+        button.addEventListener("click",() => click("red"))
+        button1.addEventListener("click",() => click('black'))
     </script>
 </body>
 
